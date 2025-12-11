@@ -1,1 +1,3 @@
-# Bookify
+Bookify — Apartment Booking System
+
+Bookify is a simple and efficient apartment booking system designed to manage listings, availability, and reservations. It allows users to browse apartments, view details, check availability, and book units with an easy workflow. The system provides admins with tools to manage apartments, pricing, bookings, and user data. Built with clean architecture principles, Bookify focuses on maintainability, scalability, and clear separation of concerns.
