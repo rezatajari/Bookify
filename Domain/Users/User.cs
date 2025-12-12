@@ -1,4 +1,5 @@
 ﻿using Domain.Abstractions;
+using Domain.Users.Events;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,6 +25,9 @@ namespace Domain.Users
         public static User Create(FirstName firstName, LastName lastName, Email email)
         {
             var user= new User(Guid.NewGuid(), firstName, lastName, email);
+
+            user.RaiseDomainEvent(new UserCreatedDomainEvent(user.Id));
+
             return user;
         }
     }
